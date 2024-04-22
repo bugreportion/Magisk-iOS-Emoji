@@ -12,6 +12,8 @@ v17.4:
 If it doesn't work try delete all files under /data/font/files/*(random folder name)*.
 
 ## Tested devices
+[Post on Reddit with user feedback](https://www.reddit.com/r/Magisk/comments/1ca3ip1/news_ios_emojis_174/)
+- Google Pixel 8 Pro (Android 14)
 - Google Pixel 5 (Android 13 / 14 / crDroid 9)
 - Google Pixel 4 (Android 13)
 - OnePlus 11 (Android 14)
