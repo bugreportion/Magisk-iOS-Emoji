@@ -30,4 +30,4 @@ If it doesn't work try delete all files under /data/font/files/*(random folder n
 - Reported working by user ozogorc on Redmi Note 12 Pro (Android 13)
 - Reported working by user devnoname120 on Xiaomi Mi Note 10 Lite (Android 14)
 - Reported working by user liocasio on OnePlus 12 (Android 14)
-- Reporter working by user mariondlsu on Pixel 7 Pro (Android 14)
+- Reported working by user mariondlsu on Pixel 7 Pro (Android 14)
