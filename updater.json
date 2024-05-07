@@ -1,6 +1,6 @@
 {
-  "version": "v17.4",
-  "versionCode": 17400,
-  "zipUrl": "https://github.com/bugreportion/Magisk-iOS-Emoji/releases/download/v17.4/emoji-v17.4.zip",
-  "changelog": "https://raw.githubusercontent.com/bugreportion/Magisk-iOS-Emoji/main/Changelog.md"
+  "version": "v17.4-1",
+  "versionCode": 17403,
+  "zipUrl": "https://github.com/bugreportion/Magisk-iOS-Emoji/releases/download/v17.4-1/emoji-v17.4-1.zip",
+  "changelog": "https://raw.githubusercontent.com/bugreportion/Magisk-iOS-Emoji/main/changelog.md"
  }

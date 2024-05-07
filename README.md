@@ -2,32 +2,27 @@
 Systemlessly replaces emoji font with emojis from iOS.  
 >
 > [!TIP]
-> There are 2 versions of module in release: regular module and module with OverlayFS support. Last one allows you to hide the detection of modifications by apps and allows you to display emoji correctly even in apps from which the root is hidden by Magisk Hide, [read here for more details.](https://github.com/HuskyDG/magic_overlayfs#magisk-overlayfs) OverlayFS module should be installed.
+> This module can be installed via OverlayFS on Magisk, which permits you to hide the detection of modifications in system and making emoji displaying correct even in apps from which the root is hidden by Magisk Hide. [Read here for more details.](https://github.com/HuskyDG/magic_overlayfs#magisk-overlayfs)
 
 ## Changelog
+v17.4-1:
+- Fixed compatibility issues with KernelSU/APatch *(at least it should be)* by [@dtingley11.](https://github.com/dtingley11)  
+To avoid root detections on KSU, use [Zygisk Next](https://github.com/Dr-TSNG/ZygiskNext) module with Enforce Denylist option.
+- Fetching updates from GitHub via manager now working.
+- Added automatic cleaning of /data/fonts.
+- Merged `NotoColorEmoji.ttf` (updated one, which should fix some emoji that were visually smaller than others). [(ed68541)](https://github.com/Keinta15/Magisk-iOS-Emoji/commit/ed6854134ea59ebc7b54e3f625b4115f3dc51794)
+- Merged clearing of Gboard cache on install. [(28137f0)](https://github.com/Keinta15/Magisk-iOS-Emoji/commit/28137f0dad32a8066b1705dc6c80cd0a2a01a833)
+- No longer need to reinstall the module to apply emojis in Meta apps, for now just reboot device. 
+> I can't actually explain why there were two separate versions of modules while we already checking if overlayfs is available using the installation script... So yes, now there's only one.
+
 v17.4:
 - [Added iOS 17.4 Emojis (Unicode 15.1).](https://blog.emojipedia.org/ios-17-4-emoji-changelog/)
 
-## Troubleshooting 
-If it doesn't work try delete all files under /data/font/files/*(random folder name)*.
-
 ## Tested devices
 [Post on Reddit with user feedback](https://www.reddit.com/r/Magisk/comments/1ca3ip1/news_ios_emojis_174/)
-- Google Pixel 8 Pro (Android 14)
-- Google Pixel 5 (Android 13 / 14 / crDroid 9)
-- Google Pixel 4 (Android 13)
-- OnePlus 11 (Android 14)
-- OnePlus 8T (Android 13)
-- OnePlus 6
-- Reported working by user tkj94 on OnePlus 11 (OxygenOS - CPH2449 - A.09)
-- Reported working by user clickkz on OnePlus 10 Pro (OxygenOS 13.1)
-- Reported working by user Electric1447 on OnePlus 9 Pro (LineageOS 20)
-- Reported working by user adajan47 on POCO M3 (Pixel Experience) 
-- Reported working by user mrjshzk on Redmi Note 10 Pro (Android 13/AOSP)
-- Reported working by user phlexian on Samsung Galaxy S22 Ultra (OneUI 5.0 - S908B)
-- Reported working by user GDPlayer on Samsung Galaxy A02
-- Reported working by user adajan47 on Samsung Galaxy A32 (OneUI 5.1)
-- Reported working by user ozogorc on Redmi Note 12 Pro (Android 13)
-- Reported working by user devnoname120 on Xiaomi Mi Note 10 Lite (Android 14)
-- Reported working by user liocasio on OnePlus 12 (Android 14)
-- Reported working by user mariondlsu on Pixel 7 Pro (Android 14)
+
+Module was tested personally by me on the following setups:
+- Google Pixel 5 on Stock Pixel ROM and crDroid (Android 13/14) with Magisk.
+- Google Pixel 4 on Stock Pixel ROM and LineageOS (Android 13/14) with Magisk/KernelSU.
+- Xiaomi POCO F5 on HyperOS and AOSPA (Android 14) with KernelSU.
+- Xiaomi Mi 11 on crDroid (Android 14) with Magisk.
